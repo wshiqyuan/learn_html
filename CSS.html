@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* css样式 */
+        /* 选择器 {css 属性:值} */
+        p {
+            color: red;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .blue {
+            color: blue;
+        }
+        .size {
+            font-size: 50px;
+        }
+        #green {
+            color: green;
+        }
+        /* 通配符选择器 */
+        /* * {
+        } */
+        .red {
+            background-color: brown;
+            width: 100px;
+            height: 100px;
+
+        }
+        .orange {
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+        }
+        em {
+            font-style: normal;
+        }
+        .line {
+            font-size: 20px;
+            /* line-height: 30px; */
+            /* 行高值是数字，表示当前标签字体大小的倍数 */
+            line-height: 2;
+            font-family: 楷体;
+            text-indent: 2em;
+        }
+        /* font 复合属性写法 font：是否倾斜 是否加粗 字号/行高 字体 （必须按照顺序书写，字号字体必须写）  */
+        div {
+            font: italic 700 20px/2 楷体;
+        }
+    </style>
+</head>
+<body>
+    <p>这是p标签</p>
+    <p class="blue size">111</p>
+    <p class="blue">2222</p>
+    <div id="green">div标签</div>
+    <div class="red">div1</div>
+    <div class="orange">div2</div>
+    <em>em 标签</em>
+    <div class="line">根据美媒披露，前段时间，沃尔玛要求一些中国供应商大幅降价。美媒披露，沃尔玛这样做的目的，是企图将美国政府新一轮对华关税的负担转嫁给中国供应商和中国消费者。在特朗普1.0时期，美国政府对华加征的关税，主要由美国消费者承担。2018年，美国对钢铁、铝、太阳能电池板和中国进口产品加征的关税，代价完全落在了美国消费者和企业身上，至少让美国消费者每月损失14亿美元。现在，沃尔玛不仅是要求中国供应商降价，并且是要求中国供应商亏本做生意。  中国制造业从业者在相关新闻的评论区提到，中国企业“没有为美国关税降价的空间”。</div>
+    <div>测试 font 属性</div>
+    
+</body>
+</html>

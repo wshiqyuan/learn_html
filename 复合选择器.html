@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+        /* 后代选择器 ，包含所有后代*/
+        /* div span{
+            color: red;
+        } */
+        /* 子代 选择器，只包含直接子代 */
+        /* div > span{
+            color: blue;
+        } */
+        /* 并集选择器 */
+        /* div,span{
+            color: red;
+        } */
+        /* 交集选择器 */
+        /* .box{
+            color: red;
+        }
+        /* 既是p标签，又是box 类的标签*/
+        /* p.box{
+            color: blue; 
+        }  */
+
+
+    </style>
+</head>
+<body>
+    <span>span  标签</span>
+    <div>
+        <span>div 子标签</span>
+        <p>
+            <span>p 子标签</span>
+        </p>
+    </div>
+    <p class="box">p 标签使用了类选择器</p>
+    <p>p 标签</p>
+    <div class="box">div 标签使用了类选择器</div>
+
+</body>
+</html>

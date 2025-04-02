@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景属性</title>
+    <style>
+        div{
+            /* width: 400px;
+            height: 400px; */
+            /* background-color: pink; */
+            /* 背景图默认平铺效果 */
+            /* background-image: url(./images/sucai1.jpg); */
+            background-size: 200px;
+            /* 不平铺：图片显示在盒子左上角 ,常用*/
+            /* background-repeat: no-repeat; */
+            /* 默认 */
+            /* background-repeat: repeat; */
+            /* 水平平铺 */
+            /* background-repeat: repeat-x; */
+            /* 垂直平铺 */
+            /* background-repeat: repeat-y; */
+            /* 左上角，默认 */
+            /* background-position: 0 0;
+            background-position: left top; */
+            /* 右下角 */
+            /* background-position: right bottom; */
+            /* 向右平移50像素 */
+            /* background-position: 50px 0; */
+            /* 向左平移50像素 */
+            /* background-position: -50px 0; */
+            /* 垂直：正数向下移，负数向上移 */
+            /* background-position: 0 -50px; */
+            /* background-position: 0 50px; */
+
+            /* background-position: 50 center; */
+
+            /* 特殊写法 */
+            /* background-position: bottom left; */
+            /* 关键字可以只写一个，另一个方向默认为center */
+            /* background-position: bottom; */
+            /* 只写一个数字表示水平方向，垂直方向默认居中 */
+            /* background-position: 50px; */
+
+            /* 图片缩放  */
+            /* width: 500px;
+            height: 300px; */
+            /* contain：如果图片的宽高跟盒子的尺寸相等停止缩放，可能导致盒子有留白 */
+            /* background-size: contain; */
+            /* cover：图片会缩放，直到图片的宽高都等于盒子的宽高，不会留白 ,可能导致图片显示不全*/
+            /* background-size: cover; */
+
+            /* 100% 图片宽度和盒子宽度一样，图片高度按照图片比例等比例缩放 */
+            /* background-size: 100%; */
+
+
+            /* 复合写法 */
+            width: 400px;
+            height: 400px;
+
+            /* 背景属性：背景色 背景图 背景图平铺方式 背景图位置/背景图缩放 */
+            background: pink url(./images/sucai1.jpg) no-repeat center bottom/cover;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div>div 标签</div>
+    
+</body>
+</html>

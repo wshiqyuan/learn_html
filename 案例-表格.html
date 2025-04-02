@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+</head>
+<body>
+    <table border="1">
+        <!-- border属性显示线框 -->
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>语文</th>
+                <th>数学</th>
+                <th>总分</th>
+            </tr>
+       </thead>
+        <tbody>
+            <!-- 合并单元格保留最左最上 -->
+            <tr>
+                <td>张三</td>
+                <td>99</td>
+                <td rowspan="2">100</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>100</td>
+                <!-- <td>100</td> -->
+                <td>199</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td colspan="3">全市第一</td>
+                <!-- <td>全市第一</td>
+                <td>全市第一</td> -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

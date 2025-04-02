@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 优先级</title>
+    <style> 
+        /* 通配符选择器<标签选择器<类选择器<id选择器<行内样式<!important 
+        选择标签的范围越大，优先级越低*/
+        /* 第一题 */
+        /* div {
+            color: green;
+        } */
+        /* !important 提权功能，优先级最高，慎用 */
+        /* * {
+            color: red !important;
+        }
+        .box {
+            color: blue;
+        }
+        #test {
+            color: orange;
+        } */
+        /* 权重叠加计算规则 */
+        /* .c1 .c2 div{
+            color: blue;
+        }
+        div #box3{
+            color: green;
+        }
+        #box1 .c3 {
+            color: orange;
+        } */
+
+        /* 第二题 */
+        /* div p {
+            color: red;
+        } */
+
+        /* 继承权重最低 */
+        /* .father{
+            color: blue;
+        } */
+
+        /* 第三题 */
+        #father #son{
+            color: blue;
+
+        }
+        #father p.c2 {
+            color: black
+        }
+        div.c1 p.c2 {
+            color: red;
+        }
+        #father{
+            color: green !important;
+        }
+        div#father.c1{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- 第一题 -->
+    <!-- <div class="box" id="test" style="color: purple;">div 标签</div> -->
+    <!-- <div id="box1" class="c1">
+        <div id="box2" class="c2">
+            <div id="box3" class="c3">
+                这行文本是什么颜色
+            </div>
+        </div>
+    </div> -->
+
+    <!-- 第二题 -->
+    <!-- <div class="father">
+        <p class="son">
+            文字
+        </p>
+    </div> -->
+
+    <!-- 第三题 -->
+    <div id="father" class="c1">
+        <p id="son" class="c2">
+            文字
+        </p>
+    </div>
+</body>
+</html>
