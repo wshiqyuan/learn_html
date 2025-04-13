@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塌陷问题</title>
+    <style>
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+
+            margin-top: 80px;
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+
+            margin-top: 50px;
+        }
+
+        /* 子级的margin-top会与父级合并 */
+
+
+        /*常用： 取消子级margin，父级设置padding */
+        /* .son {
+            margin-top: 0;
+        } */
+
+        /* .father {
+            padding-top: 50px;
+            box-sizing: border-box;
+        } */
+
+        /* 父级设置overflow:hidden */
+        /* .father{
+            overflow: hidden;
+        } */
+        /* 父级设置border-top */
+        /* .father{
+            border-top: 1px solid #000;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son">son</div>
+    </div>
+</body>
+
+</html>
