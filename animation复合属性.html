@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation复合属性</title>
+  <style>
+    
+    /* 复合属性：animation: 动画名称 动画时长 速度曲线 延迟时间 重复次数 动画方向 动画执行完毕时状态 */
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: skyblue;
+
+      /* linear：匀速运动 */
+      /* animation: changeWidth 1s linear; */
+
+      /* steps：分段运动,工作中，配合精灵图实现精灵动画 */
+      /* animation: changeWidth 1s steps(3); */
+      
+      /* 如果有两个时间值，第一个时间值表示动画时长，第二个时间值表示延迟时间 */
+      /* animation: changeWidth 1s 2s; */
+
+      /* 重复次数，infinite表示无限重复 */
+      /* animation: changeWidth 1s 3; */
+      /* animation: changeWidth 1s infinite; */
+
+      /* alternate：反向 */
+      /* animation: changeWidth 1s infinite alternate; */
+
+      /* 动画执行完毕时的状态，forwards：保留动画执行完毕后的状态，backwards（默认值）：动画执行完毕后，恢复到初始状态 */
+      /* animation: changeWidth 1s forwards; */
+      /* animation: changeWidth 1s backwards; */
+
+      /* 拆分写法 */
+      animation-name: changeWidth;
+      animation-duration: 1s;
+      /* 循环次数 */
+      animation-iteration-count: infinite;    
+    }
+
+    .box:hover {
+      animation-play-state: paused; /* 暂停动画 */
+    }
+
+    /* 宽度从200变化到800 */
+    @keyframes changeWidth {
+      from{
+        width: 200px;
+      }
+      to {
+        width: 800px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
