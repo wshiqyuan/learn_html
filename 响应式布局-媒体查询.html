@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>媒体查询</title>
+  <style>
+    /* 屏幕宽度小于等于768px时，显示蓝色背景 */
+    /* @media (max-width: 768px) {
+      body {
+        background-color: skyblue;
+      }
+    } */
+
+    /* 屏幕宽度大于1200px时，显示绿色背景 */
+    /* @media (min-width: 1200px) {
+      body {
+        background-color: lightgreen;
+      }
+    } */
+
+    /* 书写顺序 */
+    /* min-width(从小到大)； max-width(从大到小) ，css属性具有层叠性后面的属性会覆盖掉前面的*/
+
+    /* 网页默认背景色是灰色 */
+    body {
+      background-color: gray;
+    }
+
+    /* 屏幕宽度大于等于768px，网页背景是粉色 */
+    @media (min-width: 768px) {
+      body {
+        background-color: pink;
+      }
+    }
+    /* 屏幕宽度大于等于992px，网页背景是黄色 */
+    @media (min-width: 992px) {
+      body {
+        background-color: yellow;
+      }
+    }
+
+    /* 屏幕宽度大于等于1200px，网页背景是skyblue */
+    @media (min-width: 1200px) {
+      body {
+        background-color: skyblue;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  
+</body>
+</html>
